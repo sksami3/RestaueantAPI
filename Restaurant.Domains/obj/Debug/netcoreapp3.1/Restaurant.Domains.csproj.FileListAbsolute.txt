@@ -1,0 +1,16 @@
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaurantAPI\Restaurant.Domains\bin\Debug\netcoreapp3.1\Restaurant.Domains.deps.json
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaurantAPI\Restaurant.Domains\bin\Debug\netcoreapp3.1\Restaurant.Domains.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaurantAPI\Restaurant.Domains\obj\Debug\netcoreapp3.1\Restaurant.Domains.csprojAssemblyReference.cache
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaurantAPI\Restaurant.Domains\obj\Debug\netcoreapp3.1\Restaurant.Domains.AssemblyInfoInputs.cache
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaurantAPI\Restaurant.Domains\obj\Debug\netcoreapp3.1\Restaurant.Domains.AssemblyInfo.cs
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaurantAPI\Restaurant.Domains\bin\Debug\netcoreapp3.1\Restaurant.Domains.pdb
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaurantAPI\Restaurant.Domains\obj\Debug\netcoreapp3.1\Restaurant.Domains.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaurantAPI\Restaurant.Domains\obj\Debug\netcoreapp3.1\Restaurant.Domains.pdb
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Restaurant.Domains\bin\Debug\netcoreapp3.1\Restaurant.Domains.deps.json
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Restaurant.Domains\bin\Debug\netcoreapp3.1\Restaurant.Domains.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Restaurant.Domains\bin\Debug\netcoreapp3.1\Restaurant.Domains.pdb
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Restaurant.Domains\obj\Debug\netcoreapp3.1\Restaurant.Domains.csprojAssemblyReference.cache
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Restaurant.Domains\obj\Debug\netcoreapp3.1\Restaurant.Domains.AssemblyInfoInputs.cache
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Restaurant.Domains\obj\Debug\netcoreapp3.1\Restaurant.Domains.AssemblyInfo.cs
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Restaurant.Domains\obj\Debug\netcoreapp3.1\Restaurant.Domains.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Restaurant.Domains\obj\Debug\netcoreapp3.1\Restaurant.Domains.pdb
