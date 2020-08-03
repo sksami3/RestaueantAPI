@@ -9,7 +9,7 @@
       "Test/1.0.0": {
         "dependencies": {
           "Restaurant.Data.Infrustructure": "1.0.0",
-          "Restaurant.Domains": "1.0.0"
+          "Restaurant.Domain.Domains": "1.0.0"
         },
         "runtime": {
           "Test.dll": {}
@@ -962,16 +962,16 @@
       "Restaurant.Data.Infrustructure/1.0.0": {
         "dependencies": {
           "FluentNHibernate": "2.1.2",
-          "Restaurant.Domains": "1.0.0",
+          "Restaurant.Domain.Domains": "1.0.0",
           "System.Data.SqlClient": "4.8.1"
         },
         "runtime": {
           "Restaurant.Data.Infrustructure.dll": {}
         }
       },
-      "Restaurant.Domains/1.0.0": {
+      "Restaurant.Domain.Domains/1.0.0": {
         "runtime": {
-          "Restaurant.Domains.dll": {}
+          "Restaurant.Domain.Domains.dll": {}
         }
       }
     }
@@ -1666,7 +1666,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Restaurant.Domains/1.0.0": {
+    "Restaurant.Domain.Domains/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -63,9 +63,9 @@ F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurant
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\bin\Debug\netcoreapp3.1\runtimes\win7\lib\netstandard2.0\System.Private.ServiceModel.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\bin\Debug\netcoreapp3.1\Restaurant.Data.Infrustructure.dll
-F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\bin\Debug\netcoreapp3.1\Restaurant.Domains.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\bin\Debug\netcoreapp3.1\Restaurant.Domain.Domains.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\bin\Debug\netcoreapp3.1\Restaurant.Data.Infrustructure.pdb
-F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\bin\Debug\netcoreapp3.1\Restaurant.Domains.pdb
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\bin\Debug\netcoreapp3.1\Restaurant.Domain.Domains.pdb
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\obj\Debug\netcoreapp3.1\Test.csprojAssemblyReference.cache
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfoInputs.cache
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfo.cs

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Restaurant.Domain.Interfaces/1.0.0": {
+        "dependencies": {
+          "Restaurant.Domain.Domains": "1.0.0"
+        },
+        "runtime": {
+          "Restaurant.Domain.Interfaces.dll": {}
+        }
+      },
+      "Restaurant.Domain.Domains/1.0.0": {
+        "runtime": {
+          "Restaurant.Domain.Domains.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Restaurant.Domain.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Restaurant.Domain.Domains/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

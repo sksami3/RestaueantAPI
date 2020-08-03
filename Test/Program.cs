@@ -1,5 +1,5 @@
 ﻿using Restaurant.Data.Infrustructure.Helper;
-using Restaurant.Domains.Models;
+using Restaurant.Domain.Domains.Models;
 using System;
 
 

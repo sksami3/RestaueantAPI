@@ -9,7 +9,7 @@
       "Restaurant.Data.Infrustructure/1.0.0": {
         "dependencies": {
           "FluentNHibernate": "2.1.2",
-          "Restaurant.Domains": "1.0.0",
+          "Restaurant.Domain.Domains": "1.0.0",
           "System.Data.SqlClient": "4.8.1"
         },
         "runtime": {
@@ -960,9 +960,9 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "Restaurant.Domains/1.0.0": {
+      "Restaurant.Domain.Domains/1.0.0": {
         "runtime": {
-          "Restaurant.Domains.dll": {}
+          "Restaurant.Domain.Domains.dll": {}
         }
       }
     }
@@ -1652,7 +1652,7 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "Restaurant.Domains/1.0.0": {
+    "Restaurant.Domain.Domains/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

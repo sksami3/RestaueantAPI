@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Restaurant.Data.Services;
+using Restaurant.Domain.Interfaces;
+using Newtonsoft.Json;
 
 namespace RestaurantApi
 {
@@ -26,6 +29,28 @@ namespace RestaurantApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddScoped<IDishRepository, DishService>();
+
+            services.AddControllers().AddNewtonsoftJson();
+
+            //CROS
+            services.AddCors(options =>
+            {
+                options.AddPolicy("foo",
+                builder =>
+                {
+                    // Not a permanent solution, but just trying to isolate the problem
+                    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
+            });
+
+            services.AddControllers();
+
+            services.AddControllers().AddNewtonsoftJson(options =>
+            {
+                options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,6 +62,14 @@ namespace RestaurantApi
             }
 
             app.UseHttpsRedirection();
+
+            app.UseRouting();
+
+            //CORS
+            app.UseHttpsRedirection();
+
+            // Use the CORS policy
+            app.UseCors("foo");
 
             app.UseRouting();
 

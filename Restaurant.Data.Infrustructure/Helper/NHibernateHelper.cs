@@ -2,9 +2,6 @@
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
 using NHibernate.Cfg;
-using FluentNHibernate.Cfg;
-using FluentNHibernate.Cfg.Db;
-using NHibernate;
 using NHibernate.Tool.hbm2ddl;
 using Restaurant.Domains.Mappers;
 using System;

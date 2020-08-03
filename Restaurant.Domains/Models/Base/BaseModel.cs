@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace Restaurant.Domains.Base
+namespace Restaurant.Domain.Domains.Base
 {
     public class BaseModel
     {

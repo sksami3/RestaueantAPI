@@ -1,5 +1,5 @@
 ﻿using FluentNHibernate.Mapping;
-using Restaurant.Domains.Models;
+using Restaurant.Domain.Domains.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;

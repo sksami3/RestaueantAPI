@@ -1,9 +1,9 @@
-﻿using Restaurant.Domains.Base;
+﻿using Restaurant.Domain.Domains.Base;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Restaurant.Domains.Models
+namespace Restaurant.Domain.Domains.Models
 {
     public class Dish : BaseModel
     {
