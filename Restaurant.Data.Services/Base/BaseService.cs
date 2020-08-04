@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using NHibernate;
 using NHibernate.Linq;
 using Restaurant.Data.Infrustructure.Helper;
+using System.Transactions;
 
 namespace Restaurant.Data.Services.Base
 {
@@ -20,11 +21,19 @@ namespace Restaurant.Data.Services.Base
         }
         public Task<T> Create(T T)
         {
-            return Task.Run(() =>
+            T.CreatedDate = DateTime.Now;
+            T.UpdatedDate = DateTime.Now;
+            using (var transaction = _session.BeginTransaction())
             {
-                _session.SaveAsync(T);
-                return T;
-            });
+
+                _session.Save(T);
+                transaction.Commit();
+                return Task.Run(() =>
+                {
+                    return T;
+                });
+            }
+
         }
 
         public Task<T> Delete(int id)
@@ -40,6 +49,14 @@ namespace Restaurant.Data.Services.Base
                 throw e;
             }
         }
+
+        public void Dispose()
+        {
+            if (_session == null) return;
+            //_session.Close();
+            _session.Dispose();
+        }
+
         public Task<IList<T>> GetAll()
         {
             return _session.QueryOver<T>().ListAsync();
@@ -55,10 +72,10 @@ namespace Restaurant.Data.Services.Base
             var entity = GetById(id);
             try
             {
-               _session.UpdateAsync(entity);
+                _session.UpdateAsync(entity);
                 return entity;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }

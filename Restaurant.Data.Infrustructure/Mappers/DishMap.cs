@@ -11,7 +11,7 @@ namespace Restaurant.Domains.Mappers
         public DishMap()
         {
             Table("Dishes");
-            Id(x => x.Id);
+            Id(x => x.Id).GeneratedBy.Identity().Column("Id");
             Map(x => x.Image).Column("image");
             Map(x => x.Label).Column("label");
             Map(x => x.Name).Column("name");
@@ -23,6 +23,7 @@ namespace Restaurant.Domains.Mappers
             Map(x => x.CreatedDate).Column("createddate");
             Map(x => x.Description).Column("description");
             Map(x => x.Featured).Column("featured");
+            HasMany(x => x.Comments);
         }
     }
 }
