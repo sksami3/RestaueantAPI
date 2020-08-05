@@ -66,3 +66,34 @@ F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurant
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\obj\Debug\netcoreapp3.1\Test.csproj.CopyComplete
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\obj\Debug\netcoreapp3.1\Test.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\obj\Debug\netcoreapp3.1\Test.pdb
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\Test.exe
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\Test.deps.json
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.json
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.dev.json
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\Test.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\Test.pdb
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\Antlr3.Runtime.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\FluentNHibernate.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\Iesi.Collections.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\NHibernate.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\Remotion.Linq.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\Remotion.Linq.EagerFetching.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\Restaurant.Data.Infrustructure.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\Restaurant.Domain.Domains.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\Restaurant.Data.Infrustructure.pdb
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\bin\Debug\netcoreapp3.1\Restaurant.Domain.Domains.pdb
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\obj\Debug\netcoreapp3.1\Test.csprojAssemblyReference.cache
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfoInputs.cache
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfo.cs
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\obj\Debug\netcoreapp3.1\Test.csproj.CopyComplete
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\obj\Debug\netcoreapp3.1\Test.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Test\obj\Debug\netcoreapp3.1\Test.pdb

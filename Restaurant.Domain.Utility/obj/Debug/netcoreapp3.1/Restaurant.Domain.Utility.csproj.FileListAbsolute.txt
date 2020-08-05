@@ -6,3 +6,11 @@ F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurant
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Restaurant.Domain.Utility\obj\Debug\netcoreapp3.1\Restaurant.Domain.Utility.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Restaurant.Domain.Utility\obj\Debug\netcoreapp3.1\Restaurant.Domain.Utility.pdb
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Restaurant.Domain.Utility\obj\Debug\netcoreapp3.1\Restaurant.Domain.Utility.csprojAssemblyReference.cache
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Restaurant.Domain.Utility\bin\Debug\netcoreapp3.1\Restaurant.Domain.Utility.deps.json
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Restaurant.Domain.Utility\bin\Debug\netcoreapp3.1\Restaurant.Domain.Utility.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Restaurant.Domain.Utility\bin\Debug\netcoreapp3.1\Restaurant.Domain.Utility.pdb
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Restaurant.Domain.Utility\obj\Debug\netcoreapp3.1\Restaurant.Domain.Utility.csprojAssemblyReference.cache
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Restaurant.Domain.Utility\obj\Debug\netcoreapp3.1\Restaurant.Domain.Utility.AssemblyInfoInputs.cache
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Restaurant.Domain.Utility\obj\Debug\netcoreapp3.1\Restaurant.Domain.Utility.AssemblyInfo.cs
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Restaurant.Domain.Utility\obj\Debug\netcoreapp3.1\Restaurant.Domain.Utility.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Restaurant.Domain.Utility\obj\Debug\netcoreapp3.1\Restaurant.Domain.Utility.pdb
