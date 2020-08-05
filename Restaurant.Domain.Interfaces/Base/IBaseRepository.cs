@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Restaurant.Domain.Interfaces.Base
 {
-    public interface IBaseRepository<T>
+    public interface IBaseRepository<T> : IDisposable
     {
         Task<IList<T>> GetAll();
         Task<T> GetById(int id);

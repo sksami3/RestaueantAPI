@@ -3,6 +3,7 @@ using FluentNHibernate.Cfg.Db;
 using NHibernate;
 using NHibernate.Cfg;
 using NHibernate.Tool.hbm2ddl;
+using Restaurant.Data.Infrustructure.Mappers;
 using Restaurant.Domains.Mappers;
 using System;
 using System.Data.SqlClient;
@@ -131,7 +132,7 @@ namespace Restaurant.Data.Infrustructure.Helper
                 ConnectionString).ShowSql())
 
              .Mappings(m => m.FluentMappings
-             .AddFromAssemblyOf<DishMap>())
+             .AddFromAssemblyOf<FeedBackMap>())
              //.ExposeConfiguration(cfg => new SchemaExport(cfg)
              //.Create(true, false))
              .BuildSessionFactory();

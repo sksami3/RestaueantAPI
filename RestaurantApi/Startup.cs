@@ -31,6 +31,10 @@ namespace RestaurantApi
             services.AddControllers();
 
             services.AddScoped<IDishRepository, DishService>();
+            services.AddScoped<ICommentRepository, CommentService>();
+            services.AddScoped<IFeedbackRepository, FeedbackService>();
+            services.AddScoped<IPromotionRepository, PromotionService>();
+            services.AddScoped<ILeaderRepository, LeaderService>();
 
             services.AddControllers().AddNewtonsoftJson();
 
