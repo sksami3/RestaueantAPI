@@ -14,10 +14,12 @@ namespace RestaurantApi.Controllers
     public class CommentController : ControllerBase
     {
         private readonly ICommentRepository _commentRepository;
+        private readonly IDishRepository _dishRepository;
 
-        public CommentController(ICommentRepository commentRepository)
+        public CommentController(ICommentRepository commentRepository, IDishRepository dishRepository)
         {
             this._commentRepository = commentRepository;
+            _dishRepository = dishRepository;
         }
 
         // GET: /Restaurant
@@ -38,6 +40,7 @@ namespace RestaurantApi.Controllers
         [HttpPost]
         public async Task<Comment> Post(Comment Comment)
         {
+            Comment.Dish = await _dishRepository.GetById(Comment.dishId);
             return await _commentRepository.Create(Comment);
         }
 
