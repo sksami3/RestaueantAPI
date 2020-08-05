@@ -9,7 +9,7 @@ namespace Restaurant.Domain.Domains.Models
     public class Comment : BaseModel
     {
         public virtual int Rating { get; set; }
-        public virtual string ViewersComment { get; set; }
+        public virtual string viewerscomment { get; set; }
         public virtual string Author { get; set; }
         public virtual string Date { get; set; }
         [ForeignKey("Dish")]

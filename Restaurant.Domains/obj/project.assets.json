@@ -447,11 +447,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\Restaurent Website\\RestaueantAPI\\Restaurant.Domains\\Restaurant.Domain.Domains.csproj",
+      "projectUniqueName": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\RestaurantAPI\\Restaurant.Domains\\Restaurant.Domain.Domains.csproj",
       "projectName": "Restaurant.Domain.Domains",
-      "projectPath": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\Restaurent Website\\RestaueantAPI\\Restaurant.Domains\\Restaurant.Domain.Domains.csproj",
+      "projectPath": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\RestaurantAPI\\Restaurant.Domains\\Restaurant.Domain.Domains.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\Restaurent Website\\RestaueantAPI\\Restaurant.Domains\\obj\\",
+      "outputPath": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\RestaurantAPI\\Restaurant.Domains\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

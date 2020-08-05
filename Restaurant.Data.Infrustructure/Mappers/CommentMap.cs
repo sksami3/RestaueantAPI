@@ -13,7 +13,7 @@ namespace Restaurant.Data.Infrustructure.Mappers
             Table("Comments");
             Id(x => x.Id).GeneratedBy.Identity().Column("Id");
             Map(x => x.Rating);
-            Map(x => x.ViewersComment).Column("comment");
+            Map(x => x.viewerscomment);
             Map(x => x.Date).Column("createddate");
             Map(x => x.Author);
             //Map(x => x.UpdatedBy).Column("updatedby");

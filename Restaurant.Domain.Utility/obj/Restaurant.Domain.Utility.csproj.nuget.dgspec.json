@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\Restaurent Website\\RestaueantAPI\\Restaurant.Domain.Utility\\Restaurant.Domain.Utility.csproj": {}
+    "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\RestaurantAPI\\Restaurant.Domain.Utility\\Restaurant.Domain.Utility.csproj": {}
   },
   "projects": {
-    "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\Restaurent Website\\RestaueantAPI\\Restaurant.Domain.Utility\\Restaurant.Domain.Utility.csproj": {
+    "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\RestaurantAPI\\Restaurant.Domain.Utility\\Restaurant.Domain.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\Restaurent Website\\RestaueantAPI\\Restaurant.Domain.Utility\\Restaurant.Domain.Utility.csproj",
+        "projectUniqueName": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\RestaurantAPI\\Restaurant.Domain.Utility\\Restaurant.Domain.Utility.csproj",
         "projectName": "Restaurant.Domain.Utility",
-        "projectPath": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\Restaurent Website\\RestaueantAPI\\Restaurant.Domain.Utility\\Restaurant.Domain.Utility.csproj",
+        "projectPath": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\RestaurantAPI\\Restaurant.Domain.Utility\\Restaurant.Domain.Utility.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\Restaurent Website\\RestaueantAPI\\Restaurant.Domain.Utility\\obj\\",
+        "outputPath": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\RestaurantAPI\\Restaurant.Domain.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
