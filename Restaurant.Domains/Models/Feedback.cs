@@ -7,12 +7,12 @@ namespace Restaurant.Domain.Domains.Models
 {
     public class Feedback : BaseModel
     {
-        public virtual string FirstName { get; set; }
-        public virtual string LastName { get; set; }
-        public virtual long TelNum { get; set; }
-        public virtual string Email { get; set; }
-        public virtual string Agree { get; set; }
-        public virtual string ContactType { get; set; }
-        public virtual string Message { get; set; }
+        public virtual string firstname { get; set; }
+        public virtual string lastname { get; set; }
+        public virtual long telnum { get; set; }
+        public virtual string email { get; set; }
+        public virtual string agree { get; set; }
+        public virtual string contacttype { get; set; }
+        public virtual string message { get; set; }
     }
 }

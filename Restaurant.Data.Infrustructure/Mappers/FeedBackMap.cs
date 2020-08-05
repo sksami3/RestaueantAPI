@@ -12,13 +12,13 @@ namespace Restaurant.Data.Infrustructure.Mappers
         {
             Table("FeedBacks");
             Id(x => x.Id);
-            Map(x => x.FirstName);
-            Map(x => x.LastName);
-            Map(x => x.TelNum);
-            Map(x => x.Message);
-            Map(x => x.Agree);
-            Map(x => x.ContactType);
-            Map(x => x.Email);
+            Map(x => x.firstname);
+            Map(x => x.lastname);
+            Map(x => x.telnum);
+            Map(x => x.message);
+            Map(x => x.agree);
+            Map(x => x.contacttype);
+            Map(x => x.email);
             Map(x => x.CreatedBy).Column("username");
             Map(x => x.CreatedDate);
             //Map(x => x.UpdatedBy).Column("updatedby");
