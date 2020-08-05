@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\RestaurantAPI\\Restaurant.Domain.Interfaces\\Restaurant.Domain.Interfaces.csproj",
+      "projectUniqueName": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\Restaurent Website\\RestaueantAPI\\Restaurant.Domain.Interfaces\\Restaurant.Domain.Interfaces.csproj",
       "projectName": "Restaurant.Domain.Interfaces",
-      "projectPath": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\RestaurantAPI\\Restaurant.Domain.Interfaces\\Restaurant.Domain.Interfaces.csproj",
+      "projectPath": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\Restaurent Website\\RestaueantAPI\\Restaurant.Domain.Interfaces\\Restaurant.Domain.Interfaces.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\RestaurantAPI\\Restaurant.Domain.Interfaces\\obj\\",
+      "outputPath": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\Restaurent Website\\RestaueantAPI\\Restaurant.Domain.Interfaces\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -56,8 +56,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\RestaurantAPI\\Restaurant.Domains\\Restaurant.Domain.Domains.csproj": {
-              "projectPath": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\RestaurantAPI\\Restaurant.Domains\\Restaurant.Domain.Domains.csproj"
+            "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\Restaurent Website\\RestaueantAPI\\Restaurant.Domains\\Restaurant.Domain.Domains.csproj": {
+              "projectPath": "F:\\Coursera\\Front-End JavaScript Frameworks Angular\\Practical\\Angular\\Restaurent Website\\RestaueantAPI\\Restaurant.Domains\\Restaurant.Domain.Domains.csproj"
             }
           }
         }
