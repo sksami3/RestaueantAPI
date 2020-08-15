@@ -233,4 +233,14 @@ F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\RestaurantApi\obj\Debug\netcoreapp3.1\RestaurantApi.csproj.CopyComplete
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\RestaurantApi\obj\Debug\netcoreapp3.1\RestaurantApi.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\RestaurantApi\obj\Debug\netcoreapp3.1\RestaurantApi.pdb
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\obj\Debug\netcoreapp3.1\RestaurantApi.MvcApplicationPartsAssemblyInfo.cache
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
