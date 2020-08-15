@@ -1,6 +1,7 @@
 # User-specific files
 *.rsuser
 *.suo
+*.ide
 *.user
 *.userosscache
 *.sln.docstates
@@ -26,3 +27,7 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+*.lock
+*.ide-shm
+*.ide-wal
+*.suo
