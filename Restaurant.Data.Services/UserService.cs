@@ -12,12 +12,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Restaurant.Data.Services.Helpers;
 using Microsoft.Extensions.Options;
+using Microsoft.AspNet.Identity;
 
 namespace Restaurant.Data.Services
 {
     public class UserService : BaseService<User>, IUserRepository
     {
         private readonly AppSettings _appSettings;
+ 
+
         public UserService(IOptions<AppSettings> appSettings)
         {
             _appSettings = appSettings.Value;
@@ -42,7 +45,7 @@ namespace Restaurant.Data.Services
                 {
                     new Claim(ClaimTypes.Name, user.Id.ToString()),
                     new Claim(ClaimTypes.Role, user.Role),
-                    new Claim(ClaimTypes.Name, user.FirstName),
+                    new Claim(ClaimTypes.Name, user.FirstName + " " + user.LastName ),
                     new Claim(ClaimTypes.Email, user.Email)
                 }),
                     Expires = DateTime.UtcNow.AddDays(7),
@@ -50,6 +53,8 @@ namespace Restaurant.Data.Services
                 };
                 var token = tokenHandler.CreateToken(tokenDescriptor);
                 user.Token = tokenHandler.WriteToken(token);
+
+
             }
             catch(Exception e)
             {
