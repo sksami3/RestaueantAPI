@@ -6,15 +6,17 @@
 
   <ItemGroup>
     <PackageReference Include="FluentNHibernate" Version="2.1.2" />
-    <PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.3" />
     <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.7" />
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.7.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Restaurant.Data.Infrustructure\Restaurant.Data.Infrustructure.csproj" />
     <ProjectReference Include="..\Restaurant.Domain.Interfaces\Restaurant.Domain.Interfaces.csproj" />
     <ProjectReference Include="..\Restaurant.Domains\Restaurant.Domain.Domains.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
   </ItemGroup>
 
 </Project>

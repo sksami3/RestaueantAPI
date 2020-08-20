@@ -13,10 +13,7 @@ using Microsoft.Extensions.Logging;
 using Restaurant.Data.Services;
 using Restaurant.Domain.Interfaces;
 using Newtonsoft.Json;
-using Restaurant.Data.Services.Helpers;
 using System.Text;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Http.Features;
 using Restaurant.Domain.Utility;
 
@@ -34,15 +31,12 @@ namespace RestaurantApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddHttpContextAccessor();
-            services.AddControllers();
-
             services.AddScoped<IDishRepository, DishService>();
             services.AddScoped<ICommentRepository, CommentService>();
             services.AddScoped<IFeedbackRepository, FeedbackService>();
             services.AddScoped<IPromotionRepository, PromotionService>();
             services.AddScoped<ILeaderRepository, LeaderService>();
-            services.AddScoped<IUserRepository, UserService>();
+            //services.AddScoped<IUserRepository, UserService>();
 
             services.AddControllers().AddNewtonsoftJson();
 
@@ -58,33 +52,6 @@ namespace RestaurantApi
                 });
             });
 
-            // configure strongly typed settings objects
-            var appSettingsSection = Configuration.GetSection("AppSettings");
-            services.Configure<AppSettings>(appSettingsSection);
-
-            // configure jwt authentication
-            var appSettings = appSettingsSection.Get<AppSettings>();
-            var key = Encoding.ASCII.GetBytes(appSettings.Secret);
-            services.AddAuthentication(x =>
-            {
-                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            })
-            .AddJwtBearer(x =>
-            {
-                x.RequireHttpsMetadata = false;
-                x.SaveToken = true;
-                x.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(key),
-                    ValidateIssuer = false,
-                    ValidateAudience = false
-                };
-            });
-
-
-            services.AddControllers();
 
             services.AddControllers().AddNewtonsoftJson(options =>
             {
@@ -118,24 +85,12 @@ namespace RestaurantApi
             // Use the CORS policy
             app.UseCors("foo");
 
-            app.UseRouting();
-
             app.UseStaticFiles();
 
-            app.UseAuthorization();
-            app.UseAuthentication();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
-
-            // global cors policy
-            //app.UseCors(x => x
-            //    .AllowAnyOrigin()
-            //    .AllowAnyMethod()
-            //    .AllowAnyHeader());
-
-
 
             app.UseEndpoints(endpoints =>
             {

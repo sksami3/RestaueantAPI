@@ -128,17 +128,9 @@
               "target": "Package",
               "version": "[2.1.2, )"
             },
-            "Microsoft.AspNet.Identity.Core": {
-              "target": "Package",
-              "version": "[2.2.3, )"
-            },
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[3.1.7, )"
-            },
-            "System.IdentityModel.Tokens.Jwt": {
-              "target": "Package",
-              "version": "[6.7.1, )"
             }
           },
           "imports": [
@@ -330,10 +322,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.3.0, )"
-            },
-            "Microsoft.Extensions.Identity.Stores": {
-              "target": "Package",
-              "version": "[3.1.7, )"
             }
           },
           "imports": [
@@ -399,10 +387,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[3.1.7, )"
-            },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
               "version": "[2.2.0, )"

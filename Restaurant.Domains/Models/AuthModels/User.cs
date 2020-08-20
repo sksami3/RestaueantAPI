@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Restaurant.Domain.Domains.Base;
 using System;
 using System.Collections.Generic;
