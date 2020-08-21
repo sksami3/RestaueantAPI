@@ -12,7 +12,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Restaurant.Data.Services.Helpers;
 using Microsoft.Extensions.Options;
-using Microsoft.AspNet.Identity;
 
 namespace Restaurant.Data.Services
 {

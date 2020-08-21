@@ -19,6 +19,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Http.Features;
 using Restaurant.Domain.Utility;
+using Restaurant.Domain.Domains.Models.AuthModels;
+
 
 namespace RestaurantApi
 {
@@ -97,6 +99,19 @@ namespace RestaurantApi
                 o.MultipartBodyLengthLimit = int.MaxValue;
                 o.MemoryBufferThreshold = int.MaxValue;
             });
+
+            services.AddAuthorization(config =>
+            {
+                config.AddPolicy(Role.Admin, Role.AdminPolicy());
+                config.AddPolicy(Role.User, Role.UserPolicy());
+            });
+            //services.AddMvcCore()
+            //    .AddAuthorization(config =>
+            //    {
+            //        config.AddPolicy(Role.Admin, Role.AdminPolicy());
+            //        config.AddPolicy(Role.User, Role.UserPolicy());
+            //    }); // Note - this is on the IMvcBuilder, not the service collection
+                
 
         }
 

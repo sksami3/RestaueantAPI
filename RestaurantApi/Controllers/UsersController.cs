@@ -5,7 +5,6 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -20,7 +19,7 @@ using RestSharp;
 
 namespace RestaurantApi.Controllers
 {
-    [Authorize]
+    //[Authorize(AuthenticationSchemes = "Bearer")]
     [Route("[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
@@ -45,7 +44,7 @@ namespace RestaurantApi.Controllers
             return Ok(user);
         }
 
-        [Authorize(Roles = Role.Admin)]
+        //[Authorize(Policy = Role.Admin)]
         [HttpGet]
         public IActionResult Get()
         {
@@ -53,6 +52,8 @@ namespace RestaurantApi.Controllers
             return Ok(users);
         }
 
+
+        [Authorize(Policy = Role.User)]
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
@@ -71,17 +72,16 @@ namespace RestaurantApi.Controllers
 
         // POST: api/Users
         //[Authorize(Roles = Role.Admin)]
-        //[Authorize(JwtBearerDefaults.AuthenticationScheme)]
-        //[Authorize(JwtBearerDefaults.AuthenticationScheme)]
         [AllowAnonymous]
         [HttpPost]
         public async Task<User> Post(User user)
-        { 
+        {
+            user.CreatedBy = user.Username;
+            user.Image = Path.Combine("Images", "ProfilePictures")+ "/" + user.Image;
             return await _userService.Create(user);
         }
 
         [HttpPost("profilepictureuploader"), DisableRequestSizeLimit]
-        //[Authorize(Roles = Role.Admin)]
         [AllowAnonymous]
         public IActionResult ProfilePictureUploader()
         {
@@ -115,14 +115,7 @@ namespace RestaurantApi.Controllers
             }
         }
 
-        [HttpPost("pm"), DisableRequestSizeLimit]
-        //[Authorize(Roles = Role.Admin)]
-        [AllowAnonymous]
-        public string PostMan()
-        {
-            return "sdsfa";
-        }
-
+        
         // PUT: api/Users/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)

@@ -9,7 +9,6 @@
       "Restaurant.Data.Services/1.0.0": {
         "dependencies": {
           "FluentNHibernate": "2.1.2",
-          "Microsoft.AspNet.Identity.Core": "2.2.3",
           "Microsoft.Extensions.Options": "3.1.7",
           "Restaurant.Data.Infrustructure": "1.0.0",
           "Restaurant.Domain.Domains": "1.0.0",
@@ -54,11 +53,16 @@
           }
         }
       },
-      "Microsoft.AspNet.Identity.Core/2.2.3": {
+      "Microsoft.AspNetCore.Authorization/3.1.7": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Metadata": "3.1.7",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.7",
+          "Microsoft.Extensions.Options": "3.1.7"
+        },
         "runtime": {
-          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.2.3.11125"
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authorization.dll": {
+            "assemblyVersion": "3.1.7.0",
+            "fileVersion": "3.100.720.37213"
           }
         }
       },
@@ -88,6 +92,14 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Http.Features.dll": {
+            "assemblyVersion": "3.1.7.0",
+            "fileVersion": "3.100.720.37213"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Metadata/3.1.7": {
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Metadata.dll": {
             "assemblyVersion": "3.1.7.0",
             "fileVersion": "3.100.720.37213"
           }
@@ -1123,6 +1135,7 @@
       },
       "Restaurant.Domain.Domains/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "3.1.7",
           "Microsoft.AspNetCore.Http.Features": "3.1.7",
           "Microsoft.Extensions.Identity.Stores": "3.1.7"
         },
@@ -1167,12 +1180,12 @@
       "path": "iesi.collections/4.0.4",
       "hashPath": "iesi.collections.4.0.4.nupkg.sha512"
     },
-    "Microsoft.AspNet.Identity.Core/2.2.3": {
+    "Microsoft.AspNetCore.Authorization/3.1.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Mv5FpoaxspE8hlWLE4r1IdZtovg/OyFgVRhxQbx47J4sqdLImN1hnM1lnwCj+/wLmqtqFk/RYMoZ5GAcwm/00g==",
-      "path": "microsoft.aspnet.identity.core/2.2.3",
-      "hashPath": "microsoft.aspnet.identity.core.2.2.3.nupkg.sha512"
+      "sha512": "sha512-PAT7CVkoK8fXGax3CwHOOX9gj8/nJVmY6MdshGJ3CTReEBeURMN7vr0TvTYkFcmINPMqaVNws9lLKM8SrpJArg==",
+      "path": "microsoft.aspnetcore.authorization/3.1.7",
+      "hashPath": "microsoft.aspnetcore.authorization.3.1.7.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.7": {
       "type": "package",
@@ -1194,6 +1207,13 @@
       "sha512": "sha512-gOIh/ATcFrVvFxQK1CvfeIla4bOVHnXIhzImQrBvFVtemNIoMy7kD4d+/U/4833nhAU0t8JjNS3lG9DCywOnfQ==",
       "path": "microsoft.aspnetcore.http.features/3.1.7",
       "hashPath": "microsoft.aspnetcore.http.features.3.1.7.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Metadata/3.1.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/I601EPB+/YnD7cgqqnzMSmuUgRKQ6FQQvZB6+q0CNfW4FmbUpFz2zFchRFVjLVwDbwJHvULwfZ6wa3Wwe0L7A==",
+      "path": "microsoft.aspnetcore.metadata/3.1.7",
+      "hashPath": "microsoft.aspnetcore.metadata.3.1.7.nupkg.sha512"
     },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",

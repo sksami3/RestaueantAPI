@@ -128,10 +128,6 @@
               "target": "Package",
               "version": "[2.1.2, )"
             },
-            "Microsoft.AspNet.Identity.Core": {
-              "target": "Package",
-              "version": "[2.2.3, )"
-            },
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[3.1.7, )"
@@ -256,6 +252,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
               "version": "[3.1.7, )"

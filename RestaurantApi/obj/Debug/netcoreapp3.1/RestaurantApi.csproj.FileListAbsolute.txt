@@ -253,7 +253,6 @@ F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurant
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\obj\Debug\netcoreapp3.1\RestaurantApi.MvcApplicationPartsAssemblyInfo.cache
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Restaurant.Domain.Utility.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Restaurant.Domain.Utility.pdb
-F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
@@ -265,3 +264,5 @@ F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurant
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
