@@ -21,17 +21,24 @@ namespace Restaurant.Data.Services.Base
         }
         public Task<T> Create(T T)
         {
-            T.CreatedDate = DateTime.Now;
-            T.UpdatedDate = DateTime.Now;
-            using (var transaction = _session.BeginTransaction())
+            try
             {
-
-                _session.Save(T);
-                transaction.Commit();
-                return Task.Run(() =>
+                T.CreatedDate = DateTime.Now;
+                T.UpdatedDate = DateTime.Now;
+                using (var transaction = _session.BeginTransaction())
                 {
-                    return T;
-                });
+
+                    _session.Save(T);
+                    transaction.Commit();
+                    return Task.Run(() =>
+                    {
+                        return T;
+                    });
+                }
+            }
+            catch (Exception e)
+            {
+                return null;
             }
 
         }
