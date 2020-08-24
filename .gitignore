@@ -31,3 +31,4 @@ bld/
 *.ide-shm
 *.ide-wal
 *.suo
+**/wwwroot/
