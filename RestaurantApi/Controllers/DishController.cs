@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -37,6 +39,11 @@ namespace RestaurantApi.Controllers
         [HttpPost]
         public async Task<Dish> Post(Dish dish)
         {
+            var claimsIdentity = this.User.Identity as ClaimsIdentity;
+            var userId = claimsIdentity.FindFirst(ClaimTypes.Name)?.Value;
+            dish.CreatedBy = userId;
+
+            dish.Image = Path.Combine("Images", "ProfilePictures") + "/" + dish.Image;
             return await _dishRepository.Create(dish);
         }
 

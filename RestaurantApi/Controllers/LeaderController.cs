@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -36,9 +38,14 @@ namespace RestaurantApi.Controllers
 
         // POST: api/Restaurant
         [HttpPost]
-        public async Task<Leader> Post(Leader Leader)
+        public async Task<Leader> Post(Leader leader)
         {
-            return await _leaderRepository.Create(Leader);
+            var claimsIdentity = this.User.Identity as ClaimsIdentity;
+            var userId = claimsIdentity.FindFirst(ClaimTypes.Name)?.Value;
+            leader.CreatedBy = userId;
+
+            leader.Image = Path.Combine("Images", "ProfilePictures") + "/" + leader.Image;
+            return await _leaderRepository.Create(leader);
         }
 
         // PUT: api/Restaurant/5

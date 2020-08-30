@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -35,9 +37,14 @@ namespace RestaurantApi.Controllers
 
         // POST: api/Restaurant
         [HttpPost]
-        public async Task<Promotion> Post(Promotion Promotion)
+        public async Task<Promotion> Post(Promotion promotion)
         {
-            return await _promotionRepository.Create(Promotion);
+            var claimsIdentity = this.User.Identity as ClaimsIdentity;
+            var userId = claimsIdentity.FindFirst(ClaimTypes.Name)?.Value;
+            promotion.CreatedBy = userId;
+
+            promotion.Image = Path.Combine("Images", "ProfilePictures") + "/" + promotion.Image;
+            return await _promotionRepository.Create(promotion);
         }
 
         // PUT: api/Restaurant/5
