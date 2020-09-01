@@ -48,7 +48,7 @@ namespace Restaurant.Data.Services.Base
             try
             {
                 var entity = GetById(id);
-                _session.Delete(entity);
+                _session.DeleteAsync(entity);
                 return entity;
             }
             catch (Exception e)
