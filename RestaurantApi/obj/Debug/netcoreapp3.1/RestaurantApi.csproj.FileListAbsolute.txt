@@ -267,3 +267,5 @@ F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurant
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\bin\Debug\netcoreapp3.1\Dapper.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\obj\Debug\netcoreapp3.1\RestaurantApi.MvcApplicationPartsAssemblyInfo.cache
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\obj\Debug\netcoreapp3.1\RestaurantApi.csproj.CoreCompileInputs.cache
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\RestaurantApi\obj\Debug\netcoreapp3.1\RestaurantApi.genruntimeconfig.cache

@@ -26,6 +26,17 @@
           }
         }
       },
+      "Dapper/2.0.35": {
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Dapper.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.35.21366"
+          }
+        }
+      },
       "FluentNHibernate/2.1.2": {
         "dependencies": {
           "NHibernate": "5.3.1"
@@ -46,6 +57,19 @@
           "lib/netstandard1.3/Iesi.Collections.dll": {
             "assemblyVersion": "4.0.0.4000",
             "fileVersion": "4.0.4.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Authorization/3.1.7": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Metadata": "3.1.7",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.7",
+          "Microsoft.Extensions.Options": "3.1.7"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authorization.dll": {
+            "assemblyVersion": "3.1.7.0",
+            "fileVersion": "3.100.720.37213"
           }
         }
       },
@@ -75,6 +99,14 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Http.Features.dll": {
+            "assemblyVersion": "3.1.7.0",
+            "fileVersion": "3.100.720.37213"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Metadata/3.1.7": {
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Metadata.dll": {
             "assemblyVersion": "3.1.7.0",
             "fileVersion": "3.100.720.37213"
           }
@@ -632,7 +664,7 @@
           "System.Reflection": "4.3.0",
           "System.Reflection.Emit": "4.3.0",
           "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.7.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
           "System.Reflection.TypeExtensions": "4.3.0",
@@ -736,14 +768,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Reflection.Emit.Lightweight/4.3.0": {
-        "dependencies": {
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Runtime": "4.3.0"
-        }
-      },
+      "System.Reflection.Emit.Lightweight/4.7.0": {},
       "System.Reflection.Extensions/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -1079,6 +1104,8 @@
       },
       "Restaurant.Domain.Domains/1.0.0": {
         "dependencies": {
+          "Dapper": "2.0.35",
+          "Microsoft.AspNetCore.Authorization": "3.1.7",
           "Microsoft.AspNetCore.Http.Features": "3.1.7",
           "Microsoft.Extensions.Identity.Stores": "3.1.7"
         },
@@ -1101,6 +1128,13 @@
       "path": "antlr3.runtime/3.5.1",
       "hashPath": "antlr3.runtime.3.5.1.nupkg.sha512"
     },
+    "Dapper/2.0.35": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/xAgd8BO8EDnJ0sURWEV8LptHHvTKxoYiT63YUF2U/yWE2VyUCqR2jcrtEyNngT9Kjzppecz95UKiBla3PnR7g==",
+      "path": "dapper/2.0.35",
+      "hashPath": "dapper.2.0.35.nupkg.sha512"
+    },
     "FluentNHibernate/2.1.2": {
       "type": "package",
       "serviceable": true,
@@ -1114,6 +1148,13 @@
       "sha512": "sha512-jlebSjv2a7amYfKXEUsPDSf2Yi9r0/FkvvT6Dy7ehl7z8du+dTGqKDu+fYbnE+WuIz/v3prYm1jpBljMrY1p+Q==",
       "path": "iesi.collections/4.0.4",
       "hashPath": "iesi.collections.4.0.4.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authorization/3.1.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PAT7CVkoK8fXGax3CwHOOX9gj8/nJVmY6MdshGJ3CTReEBeURMN7vr0TvTYkFcmINPMqaVNws9lLKM8SrpJArg==",
+      "path": "microsoft.aspnetcore.authorization/3.1.7",
+      "hashPath": "microsoft.aspnetcore.authorization.3.1.7.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.7": {
       "type": "package",
@@ -1135,6 +1176,13 @@
       "sha512": "sha512-gOIh/ATcFrVvFxQK1CvfeIla4bOVHnXIhzImQrBvFVtemNIoMy7kD4d+/U/4833nhAU0t8JjNS3lG9DCywOnfQ==",
       "path": "microsoft.aspnetcore.http.features/3.1.7",
       "hashPath": "microsoft.aspnetcore.http.features.3.1.7.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Metadata/3.1.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/I601EPB+/YnD7cgqqnzMSmuUgRKQ6FQQvZB6+q0CNfW4FmbUpFz2zFchRFVjLVwDbwJHvULwfZ6wa3Wwe0L7A==",
+      "path": "microsoft.aspnetcore.metadata/3.1.7",
+      "hashPath": "microsoft.aspnetcore.metadata.3.1.7.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/3.1.7": {
       "type": "package",
@@ -1626,12 +1674,12 @@
       "path": "system.reflection.emit.ilgeneration/4.3.0",
       "hashPath": "system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512"
     },
-    "System.Reflection.Emit.Lightweight/4.3.0": {
+    "System.Reflection.Emit.Lightweight/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oadVHGSMsTmZsAF864QYN1t1QzZjIcuKU3l2S9cZOwDdDueNTrqq1yRj7koFfIGEnKpt6NjpL3rOzRhs4ryOgA==",
-      "path": "system.reflection.emit.lightweight/4.3.0",
-      "hashPath": "system.reflection.emit.lightweight.4.3.0.nupkg.sha512"
+      "sha512": "sha512-a4OLB4IITxAXJeV74MDx49Oq2+PsF6Sml54XAFv+2RyWwtDBcabzoxiiJRhdhx+gaohLh4hEGCLQyBozXoQPqA==",
+      "path": "system.reflection.emit.lightweight/4.7.0",
+      "hashPath": "system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
     },
     "System.Reflection.Extensions/4.3.0": {
       "type": "package",

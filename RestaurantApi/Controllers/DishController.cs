@@ -4,13 +4,16 @@ using System.IO;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Restaurant.Domain.Domains.Models;
+using Restaurant.Domain.Domains.Models.AuthModels;
 using Restaurant.Domain.Interfaces;
 
 namespace RestaurantApi.Controllers
 {
+    [Authorize(AuthenticationSchemes = "Bearer")]
     [Route("[controller]"+"es")]
     [ApiController]
     public class DishController : ControllerBase
@@ -22,6 +25,7 @@ namespace RestaurantApi.Controllers
             this._dishRepository = dishRepository;
         }
         // GET: /Restaurant
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IList<Dish>> Get()
         {
@@ -29,6 +33,7 @@ namespace RestaurantApi.Controllers
         }
 
         // GET: /Restaurant/5
+        [AllowAnonymous]
         [HttpGet("{id}", Name = "Get")]
         public async Task<Dish> Get(int id)
         {
@@ -37,6 +42,7 @@ namespace RestaurantApi.Controllers
 
         // POST: api/Restaurant
         [HttpPost]
+        [Authorize(Policy = Role.Admin)]
         public async Task<Dish> Post(Dish dish)
         {
             var claimsIdentity = this.User.Identity as ClaimsIdentity;
@@ -49,6 +55,7 @@ namespace RestaurantApi.Controllers
 
         // PUT: api/Restaurant/5
         [HttpPut("{id}")]
+        [Authorize(Policy = Role.Admin)]
         public async Task<Dish> Put(int id,Dish dish)
         {
             return await _dishRepository.Update(id,dish);
@@ -56,6 +63,7 @@ namespace RestaurantApi.Controllers
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
+        [Authorize(Policy = Role.Admin)]
         public async Task<Dish> Delete(int id)
         {
             return await _dishRepository.Delete(id);

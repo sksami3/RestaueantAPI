@@ -4,13 +4,16 @@ using System.IO;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Restaurant.Domain.Domains.Models;
+using Restaurant.Domain.Domains.Models.AuthModels;
 using Restaurant.Domain.Interfaces;
 
 namespace RestaurantApi.Controllers
 {
+    [Authorize(AuthenticationSchemes = "Bearer")]
     [Route("[controller]"+"s")]
     [ApiController]
     public class PromotionController : ControllerBase
@@ -22,6 +25,7 @@ namespace RestaurantApi.Controllers
             this._promotionRepository = promotionRepository;
         }
         // GET: api/Promotion
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IList<Promotion>> Get()
         {
@@ -29,6 +33,7 @@ namespace RestaurantApi.Controllers
         }
 
         // GET: /Restaurant/5
+        [AllowAnonymous]
         [HttpGet("{id}", Name = "GetPromotion")]
         public async Task<Promotion> Get(int id)
         {
@@ -36,6 +41,7 @@ namespace RestaurantApi.Controllers
         }
 
         // POST: api/Restaurant
+        [Authorize(Policy = Role.Admin)]
         [HttpPost]
         public async Task<Promotion> Post(Promotion promotion)
         {
@@ -48,6 +54,7 @@ namespace RestaurantApi.Controllers
         }
 
         // PUT: api/Restaurant/5
+        [Authorize(Policy = Role.Admin)]
         [HttpPut("{id}")]
         public async Task<Promotion> Put(int id, Promotion Promotion)
         {
@@ -55,6 +62,7 @@ namespace RestaurantApi.Controllers
         }
 
         // DELETE: api/ApiWithActions/5
+        [Authorize(Policy = Role.Admin)]
         [HttpDelete("{id}")]
         public async Task<Promotion> Delete(int id)
         {

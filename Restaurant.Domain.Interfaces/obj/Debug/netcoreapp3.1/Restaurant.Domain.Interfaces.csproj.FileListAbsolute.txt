@@ -20,3 +20,4 @@ F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Restaurant.Domain.Interfaces\obj\Debug\netcoreapp3.1\Restaurant.Domain.Interfaces.csproj.CopyComplete
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Restaurant.Domain.Interfaces\obj\Debug\netcoreapp3.1\Restaurant.Domain.Interfaces.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurent Website\RestaueantAPI\Restaurant.Domain.Interfaces\obj\Debug\netcoreapp3.1\Restaurant.Domain.Interfaces.pdb
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Restaurant.Domain.Interfaces\obj\Debug\netcoreapp3.1\Restaurant.Domain.Interfaces.csproj.CoreCompileInputs.cache

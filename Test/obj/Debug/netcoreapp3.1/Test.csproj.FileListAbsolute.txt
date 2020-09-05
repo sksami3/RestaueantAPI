@@ -113,3 +113,8 @@ F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\Restaurant
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\bin\Debug\netcoreapp3.1\Dapper.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\obj\Debug\netcoreapp3.1\Test.csproj.CoreCompileInputs.cache
+F:\Coursera\Front-End JavaScript Frameworks Angular\Practical\Angular\RestaurantAPI\Test\obj\Debug\netcoreapp3.1\Test.genruntimeconfig.cache

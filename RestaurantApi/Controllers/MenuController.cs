@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Restaurant.Domain.Domains.Models.AuthModels;
 using Restaurant.Domain.Domains.Models.ViewModels;
 using Restaurant.Domain.Utility;
 
 namespace RestaurantApi.Controllers
 {
+    [Authorize(AuthenticationSchemes = "Bearer")]
     [Route("menus")]
     [ApiController]
     public class MenuController : ControllerBase
@@ -23,6 +26,7 @@ namespace RestaurantApi.Controllers
             configuration = config;
         }
         // GET: api/Menu
+        [Authorize(Policy = Role.Admin)]
         [HttpGet]
         public IList<MenuViewModel> GetMenus()
         {

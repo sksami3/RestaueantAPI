@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Restaurant.Domain.Domains.Models;
+using Restaurant.Domain.Domains.Models.AuthModels;
 using Restaurant.Domain.Interfaces;
 
 namespace RestaurantApi.Controllers
 {
+    [Authorize(AuthenticationSchemes = "Bearer")]
     [Route("[controller]"+"s")]
     [ApiController]
     public class CommentController : ControllerBase
@@ -38,6 +41,7 @@ namespace RestaurantApi.Controllers
 
         // POST: api/Restaurant
         [HttpPost]
+        [Authorize(Policy = Role.User)]
         public async Task<Comment> Post(Comment Comment)
         {
             Comment.Dish = await _dishRepository.GetById(Comment.dishId);
@@ -46,6 +50,7 @@ namespace RestaurantApi.Controllers
 
         // PUT: api/Restaurant/5
         [HttpPut("{id}")]
+        [Authorize(Policy = Role.Admin)]
         public async Task<Comment> Put(int id, Comment Comment)
         {
             return await _commentRepository.Update(id, Comment);
@@ -53,6 +58,7 @@ namespace RestaurantApi.Controllers
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
+        [Authorize(Policy = Role.Admin)]
         public async Task<Comment> Delete(int id)
         {
             return await _commentRepository.Delete(id);

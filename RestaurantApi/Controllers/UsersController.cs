@@ -19,7 +19,7 @@ using RestSharp;
 
 namespace RestaurantApi.Controllers
 {
-    //[Authorize(AuthenticationSchemes = "Bearer")]
+    [Authorize(AuthenticationSchemes = "Bearer")]
     [Route("[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
@@ -44,7 +44,7 @@ namespace RestaurantApi.Controllers
             return Ok(user);
         }
 
-        //[Authorize(Policy = Role.Admin)]
+        [Authorize(Policy = Role.Admin)]
         [HttpGet]
         public IActionResult Get()
         {
@@ -53,7 +53,7 @@ namespace RestaurantApi.Controllers
         }
 
 
-        [Authorize(Policy = Role.User)]
+        [Authorize(Policy = Role.Admin)]
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
@@ -71,7 +71,6 @@ namespace RestaurantApi.Controllers
         }
 
         // POST: api/Users
-        //[Authorize(Roles = Role.Admin)]
         [AllowAnonymous]
         [HttpPost]
         public async Task<User> Post(User user)
