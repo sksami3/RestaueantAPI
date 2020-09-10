@@ -18,5 +18,6 @@ namespace Restaurant.Domain.Domains.Models.AuthModels
         public virtual string Token { get; set; }
         public virtual string Image { get; set; }
         public virtual string Email { get; set; }
+        public virtual string ResetId { get; set; }
     }
 }

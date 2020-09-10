@@ -23,8 +23,9 @@ namespace Restaurant.Data.Infrustructure.Mappers
             Map(x => x.Username).Column("username"); ;
             Map(x => x.Email).Column("email");
             //Map(x => x.UpdatedBy).Column("updatedby");
-            //Map(x => x.UpdatedDate).Column("updateddate");
+            //Map(x => x.UpdatedDate).Column("updateddate");resetId
             Map(x => x.UpdatedDate).Column("modifieddate");
+            Map(x => x.ResetId).Column("resetId");
         }
     }
 }

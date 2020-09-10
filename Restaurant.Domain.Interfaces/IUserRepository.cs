@@ -13,6 +13,7 @@ namespace Restaurant.Domain.Interfaces
         //Task<IEnumerable<User>> GetAll();
         //Task<User> GetById(int id);
         Task<User> GetByUsernameAndPass(string username, string password);
+        Task<User> GetByEmail(string email);
 
     }
 }

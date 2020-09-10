@@ -260,6 +260,10 @@
               "target": "Package",
               "version": "[2.0.35, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"

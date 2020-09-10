@@ -81,13 +81,18 @@ namespace Restaurant.Data.Services.Base
             return _session.QueryOver<T>().Where(x => x.Id == id).SingleOrDefaultAsync();
         }
 
-        public Task<T> Update(int id, T T)
+        public async Task<T> Update(int id, T T)
         {
-            var entity = GetById(id);
+            var entity = await GetById(id);
             try
             {
-                _session.UpdateAsync(entity);
-                return entity;
+                using (var transaction = _session.BeginTransaction())
+                {
+                    _session.SaveOrUpdate(entity);
+                    transaction.Commit();
+                    return entity;
+                }
+
             }
             catch (Exception e)
             {

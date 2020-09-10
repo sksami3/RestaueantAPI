@@ -64,6 +64,11 @@ namespace Restaurant.Data.Services
             return user.WithoutPassword();
         }
 
+        public async Task<User> GetByEmail(string email)
+        {
+            return await _session.QueryOver<User>().Where(x => x.Email == email).SingleOrDefaultAsync();
+        }
+
         public async Task<User> GetByUsernameAndPass(string username, string password)
         {
             try

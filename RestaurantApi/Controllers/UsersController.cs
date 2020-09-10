@@ -136,5 +136,22 @@ namespace RestaurantApi.Controllers
         public void Delete(int id)
         {
         }
+        //SendResetLink
+        [AllowAnonymous]
+        [HttpPost("SendResetLink")]
+        public async Task<bool> SendResetLink(User user)
+        {
+            if (_utility.IsAlreadyExists(configuration.GetConnectionString("RestaurantConnection"), user.Username, user.Email))
+            {
+                User u = await _userService.GetByEmail(user.Email);
+                u.ResetId = Guid.NewGuid().ToString();
+                var res =_userService.Update(u.Id,u);
+                //using user.token to get the url of the application
+                u.Token = user.Token;
+                _utility.SendEmail(u);
+                return true;
+            }
+            return false;
+        }
     }
 }
