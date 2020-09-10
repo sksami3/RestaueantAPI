@@ -84,7 +84,7 @@ namespace RestaurantApi.Controllers
             if (!_utility.IsAlreadyExists(configuration.GetConnectionString("RestaurantConnection"), user.Username, user.Email))
             {
                 user.CreatedBy = user.Username;
-                user.Image = Path.Combine("Images", "ProfilePictures") + "/" + user.Image;
+                user.Image = "Images/"+ "ProfilePictures" + "/" + user.Image;
                 return await _userService.Create(user);
             }
             return null;
