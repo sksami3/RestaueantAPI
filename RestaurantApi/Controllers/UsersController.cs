@@ -10,11 +10,13 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Nancy.Json;
 using Newtonsoft.Json;
 using Restaurant.Domain.Domains.Models.AuthModels;
 using Restaurant.Domain.Domains.Models.ViewModels;
 using Restaurant.Domain.Interfaces;
+using Restaurant.Domain.Utility;
 using RestSharp;
 
 namespace RestaurantApi.Controllers
@@ -25,16 +27,19 @@ namespace RestaurantApi.Controllers
     public class UsersController : ControllerBase
     {
         private IUserRepository _userService;
-        //private UserManager<ApplicationUser> _userManager;
+        private readonly Utility _utility;
+        private readonly IConfiguration configuration;
 
-        public UsersController(IUserRepository userService)
+        public UsersController(IUserRepository userService, IConfiguration config)
         {
             _userService = userService;
+            _utility = new Utility();
+            configuration = config;
         }
 
         [AllowAnonymous]
         [HttpPost("authenticate")]
-        public async Task<IActionResult> Authenticate([FromBody]AuthenticateModel model)
+        public async Task<IActionResult> Authenticate([FromBody] AuthenticateModel model)
         {
             var user = await _userService.Authenticate(model.Username, model.Password);
 
@@ -42,6 +47,7 @@ namespace RestaurantApi.Controllers
                 return BadRequest(new { message = "Username or password is incorrect" });
 
             return Ok(user);
+
         }
 
         [Authorize(Policy = Role.Admin)]
@@ -75,9 +81,13 @@ namespace RestaurantApi.Controllers
         [HttpPost]
         public async Task<User> Post(User user)
         {
-            user.CreatedBy = user.Username;
-            user.Image = Path.Combine("Images", "ProfilePictures")+ "/" + user.Image;
-            return await _userService.Create(user);
+            if (!_utility.IsAlreadyExists(configuration.GetConnectionString("RestaurantConnection"), user.Username, user.Email))
+            {
+                user.CreatedBy = user.Username;
+                user.Image = Path.Combine("Images", "ProfilePictures") + "/" + user.Image;
+                return await _userService.Create(user);
+            }
+            return null;
         }
 
         [HttpPost("profilepictureuploader"), DisableRequestSizeLimit]
@@ -114,7 +124,7 @@ namespace RestaurantApi.Controllers
             }
         }
 
-        
+
         // PUT: api/Users/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)

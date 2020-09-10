@@ -43,18 +43,25 @@ namespace Restaurant.Data.Services.Base
 
         }
 
-        public Task<T> Delete(int id)
+        public async Task<T> Delete(int id)
         {
             try
             {
-                var entity = GetById(id);
-                _session.DeleteAsync(entity);
-                return entity;
+                using (var transaction = _session.BeginTransaction())
+                {
+                    var entity = await GetById(id);
+                    _session.Delete(entity);
+                    _session.Flush();
+                    transaction.Commit();
+
+                    return entity;
+                }
             }
             catch (Exception e)
             {
                 throw e;
             }
+            
         }
 
         public void Dispose()

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
+using Restaurant.Domain.Domains.Models.AuthModels;
 using Restaurant.Domain.Domains.Models.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,28 @@ namespace Restaurant.Domain.Utility
 
                 //FiddleHelper.WriteTable(orderDetails);
                 //FiddleHelper.WriteTable(new List<OrderDetail>() { orderDetail });
+            }
+        }
+        public bool IsAlreadyExists(string connectionString,string username,string email)
+        {
+            string sqlGetAllMenus = "SELECT * FROM users WHERE username = '" + username + "' or email = '" + email + "'; ";
+
+            using (var connection = new SqlConnection(connectionString))
+            {
+                int count = 0;
+                try
+                {
+                     count = connection.Query<User>(sqlGetAllMenus).ToList().Count();
+                }
+                catch(Exception e)
+                {
+
+                }
+
+                if (count > 0)
+                    return true;
+                else
+                    return false;
             }
         }
     }

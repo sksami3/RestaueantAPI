@@ -23,7 +23,7 @@ namespace Restaurant.Domains.Mappers
             Map(x => x.CreatedDate).Column("createddate");
             Map(x => x.Description).Column("description");
             Map(x => x.Featured).Column("featured");
-            HasMany(x => x.Comments);
+            HasMany(x => x.Comments).Cascade.All();
         }
     }
 }
