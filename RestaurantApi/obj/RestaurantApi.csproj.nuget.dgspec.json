@@ -124,6 +124,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
             "FluentNHibernate": {
               "target": "Package",
               "version": "[2.1.2, )"
@@ -423,6 +427,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
             "Dapper": {
               "target": "Package",
               "version": "[2.0.35, )"

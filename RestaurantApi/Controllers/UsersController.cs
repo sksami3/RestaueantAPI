@@ -58,6 +58,14 @@ namespace RestaurantApi.Controllers
             return Ok(users);
         }
 
+        [AllowAnonymous]
+        [HttpPost("GetByEmail")]
+        public async Task<IActionResult> GetByEmail(string Email)
+        {
+            User users = await _userService.GetByEmail(Email);
+            return Ok(users);
+        }
+
 
         [Authorize(Policy = Role.Admin)]
         [HttpGet("{id}")]
@@ -83,6 +91,7 @@ namespace RestaurantApi.Controllers
         {
             if (!_utility.IsAlreadyExists(configuration.GetConnectionString("RestaurantConnection"), user.Username, user.Email))
             {
+                user.Password  = BCrypt.Net.BCrypt.HashPassword(user.Password);
                 user.CreatedBy = user.Username;
                 user.Image = "Images/"+ "ProfilePictures" + "/" + user.Image;
                 return await _userService.Create(user);

@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Restaurant.Data.Services.Helpers;
 using Microsoft.Extensions.Options;
+using BCrypt.Net;
 
 namespace Restaurant.Data.Services
 {
@@ -73,7 +74,15 @@ namespace Restaurant.Data.Services
         {
             try
             {
-                return await _session.QueryOver<User>().Where(x => x.Username == username && x.Password == password).SingleOrDefaultAsync();
+                User user = await _session.QueryOver<User>().Where(x => x.Username == username).SingleOrDefaultAsync();
+                if (BCrypt.Net.BCrypt.Verify(password, user.Password))
+                    return user;
+                else
+                {
+                    user = null;
+                    return null;
+                }
+                    
             }
             catch(Exception e)
             {

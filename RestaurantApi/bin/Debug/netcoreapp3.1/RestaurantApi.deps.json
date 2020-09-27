@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "RestaurantApi/1.0.0": {
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.0",
           "Dapper": "2.0.35",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.7",
           "Microsoft.AspNetCore.Cors": "2.2.0",
@@ -318,6 +319,17 @@
         },
         "compile": {
           "lib/netstandard1.1/Antlr3.Runtime.dll": {}
+        }
+      },
+      "BCrypt.Net-Next/4.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/BCrypt.Net-Next.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/BCrypt.Net-Next.dll": {}
         }
       },
       "Dapper/2.0.35": {
@@ -2538,6 +2550,7 @@
       },
       "Restaurant.Data.Services/1.0.0": {
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.0",
           "FluentNHibernate": "2.1.2",
           "Microsoft.Extensions.Options": "3.1.7",
           "Restaurant.Data.Infrustructure": "1.0.0",
@@ -4192,6 +4205,13 @@
       "sha512": "sha512-ZwCEpLCLZXkjzf1lYEixp9hgVlYYk33ACHn6xjFyVhGRi2BpoYQez0qtatbetdylASWYTG+cGz0CGR4z66JM4w==",
       "path": "antlr3.runtime/3.5.1",
       "hashPath": "antlr3.runtime.3.5.1.nupkg.sha512"
+    },
+    "BCrypt.Net-Next/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1rjyVK+/YJnCElALjVNt/aUPIIRoFocFZzblsiFo2giA3WVYExk/E5UT6i4RqEHwIwEwoQHt02I1llaEIQ59eQ==",
+      "path": "bcrypt.net-next/4.0.0",
+      "hashPath": "bcrypt.net-next.4.0.0.nupkg.sha512"
     },
     "Dapper/2.0.35": {
       "type": "package",
