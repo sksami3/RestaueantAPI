@@ -34,6 +34,12 @@ namespace Restaurant.Data.Services
             if (user == null)
                 return null;
 
+            GenerateToken(user);
+            return user.WithoutPassword();
+        }
+
+        private User GenerateToken(User user)
+        {
             // authentication successful so generate jwt token
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
@@ -53,21 +59,21 @@ namespace Restaurant.Data.Services
                 };
                 var token = tokenHandler.CreateToken(tokenDescriptor);
                 user.Token = tokenHandler.WriteToken(token);
-
+                return user;
 
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }
-            
 
-            return user.WithoutPassword();
         }
 
         public async Task<User> GetByEmail(string email)
         {
-            return await _session.QueryOver<User>().Where(x => x.Email == email).SingleOrDefaultAsync();
+            User user = await _session.QueryOver<User>().Where(x => x.Email == email).SingleOrDefaultAsync();
+            GenerateToken(user);
+            return user.WithoutPassword();
         }
 
         public async Task<User> GetByUsernameAndPass(string username, string password)
