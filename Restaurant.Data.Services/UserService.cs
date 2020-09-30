@@ -81,7 +81,7 @@ namespace Restaurant.Data.Services
             try
             {
                 User user = await _session.QueryOver<User>().Where(x => x.Username == username).SingleOrDefaultAsync();
-                if (BCrypt.Net.BCrypt.Verify(password, user.Password))
+                if (user!= null && BCrypt.Net.BCrypt.Verify(password, user.Password))
                     return user;
                 else
                 {
